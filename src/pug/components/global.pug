@@ -1,15 +1,11 @@
-mixin img(url, alt, className)
-  img(src=require(url), alt=alt)(class=className)
-
-mixin svg(className, href)
-  svg(class=className)
-    use(href=href)
+//mixin img(url, alt, className)
+//  img(src=require(url), alt=alt)(class=className)
 
 mixin link(href, name)
-  a.link(class!=attributes.classhref=href)= name
+  a.link(class!=attributes.class href=href)= name
 
 mixin button(name, type)
-  button.button(class!=attributes.classtype=type)= name
+  button.button(class!=attributes.class type=type)= name
 
 mixin svg(className, href, aria_label)
   svg(class=className, aria-label=aria_label)
