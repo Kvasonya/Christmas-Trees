@@ -1,3 +1,17 @@
-mixin header()
-  header
-    .container
+mixin header
+  header.header
+    .header__container.container
+      +svg('header__logo logo', '#logo', 'Логотип компании Christmas Trees')
+      button.header__burger.burger
+        span.burger__line
+      nav.header__navigation.navigation
+        ul.navigation__list
+          li.navigation__item
+            +link('#fraser-fir', 'Пихта Фразера').navigation__link
+          li.navigation__item
+            +link('#russian-spruce','Русская ель').navigation__link
+          li.navigation__item
+            +link('#sibirean-fir', 'Сибирская пихта').navigation__link
+          li.navigation__item
+            +link('#payment', 'Как оплатить?').navigation__link
+      +button('Консультация', 'button').header__consultation

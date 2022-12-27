@@ -1,5 +1,11 @@
 @import './fonts';
 @import './variables';
 @import './global';
+@import './logo';
 
 @import './pages/index';
+
+//header
+@import './sections/header/header';
+@import './sections/header/burger';
+@import './sections/header/navigation';
