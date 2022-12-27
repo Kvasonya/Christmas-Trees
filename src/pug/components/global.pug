@@ -6,11 +6,11 @@ mixin svg(className, href)
     use(href=href)
 
 mixin link(href, name)
-  a(class!=attributes.class class='link' href=href)=name
+  a.link(class!=attributes.classhref=href)= name
 
-mixin button(name, className, type)
-  button(class=className class='button' type=type, &attributes=attributes )=name
+mixin button(name, type)
+  button.button(class!=attributes.classtype=type)= name
 
-mixin svg(className, href)
-  svg(class=className)
+mixin svg(className, href, aria_label)
+  svg(class=className, aria-label=aria_label)
     use(href=href)

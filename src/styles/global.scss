@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -7,13 +9,33 @@ body {
   font-size: 18px;
   letter-spacing: 0.04em;
   color: var(--main-color);
-  background-color: green;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Cormorant, serif;
   font-weight: 700;
   font-size: 70px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  font: inherit;
 }
 
 img {
