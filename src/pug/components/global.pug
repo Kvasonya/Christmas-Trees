@@ -1,0 +1,16 @@
+mixin img(url, alt, className)
+  img(src=require(url), alt=alt)(class=className)
+
+mixin svg(className, href)
+  svg(class=className)
+    use(href=href)
+
+mixin link(href, name)
+  a(class!=attributes.class class='link' href=href)=name
+
+mixin button(name, className, type)
+  button(class=className class='button' type=type, &attributes=attributes )=name
+
+mixin svg(className, href)
+  svg(class=className)
+    use(href=href)

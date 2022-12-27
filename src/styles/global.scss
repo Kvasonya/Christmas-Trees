@@ -1,0 +1,34 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  background-color: green;
+}
+
+h1, h2 {
+  font-family: Cormorant, serif;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}

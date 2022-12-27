@@ -1,0 +1,12 @@
+$font-path: '../assets/fonts';
+
+/* latin-cyrillic */
+@font-face {
+  font-family: Cormorant;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Cormorant'), local('Cormorant-Bold'),
+    url('#{$font-path}/cormorant-v11-latin_cyrillic-700.woff2') format('woff2'), local('Cormorant'),
+    url('#{$font-path}/cormorant-v11-latin_cyrillic-700.woff') format('woff');
+}
+
