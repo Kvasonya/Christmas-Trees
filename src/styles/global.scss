@@ -51,6 +51,25 @@ img {
 }
 
 .container {
-  max-width: 1290px;
+  max-width: 1390px;
   margin: 0 auto;
+  padding: 0 50px;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 42px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 580px) {
 }
