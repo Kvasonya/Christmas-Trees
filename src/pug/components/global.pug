@@ -1,8 +1,13 @@
-//mixin img(url, alt, className)
-//  img(src=require(url), alt=alt)(class=className)
+mixin img(url, alt)
+  img(class!=attributes.class src=require(url), alt=alt)
 
 mixin link(href, name)
   a.link(class!=attributes.class href=href)= name
+
+mixin link-img(href, name, url, alt, className)
+  a(class!=attributes.class href=href)
+    img(class=className, src=require(url), alt=alt)
+    span=name
 
 mixin button(name, type)
   button.button(class!=attributes.class type=type)= name
