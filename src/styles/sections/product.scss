@@ -1,0 +1,212 @@
+.product {
+  padding: 80px 0;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  &:nth-child(even) &__container {
+    flex-direction: row-reverse;
+  }
+  &:nth-child(3n) {
+    background-color: var(--one-color);
+  }
+  &:nth-child(3n + 1) {
+    background-color: var(--two-color);
+  }
+  &:nth-child(3n + 2) {
+    background-color: var(--three-color);
+  }
+  &__content {
+    padding-top: 56px;
+    max-width: 500px;
+  }
+  &__title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+  }
+  &__features {
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    margin-bottom: 50px;
+  }
+  &__description {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    margin-bottom: 70px;
+  }
+  &__button-wrapper {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+  &__button {
+    display: block;
+    padding: 14px 36px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+    background-color: transparent;
+    &:hover {
+      color: var(--main-bg-color);
+      border-color: var(--main-color);
+      background-color: var(--main-color);
+    }
+    &:active {
+      color: var(--main-color);
+      border-color: var(--second-bg-color);
+      background-color: var(--second-bg-color);
+    }
+    &_order {
+      background-color: var(--second-bg-color);
+      &:focus {
+        outline: 2px solid var(--second-color);
+        border-color: transparent;
+      }
+    }
+    &_more {
+      border: 2px solid var(--second-bg-color);
+      &:focus {
+        outline-color: var(--main-color);
+        border-color: transparent;
+      }
+    }
+  }
+  &__picture {
+    width: calc(50% - 15px);
+    border-radius: 16px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1440px) {
+  .product {
+    &__content {
+      max-width: 460px;
+      padding-top: 40px;
+    }
+    &__title {
+      font-size: 60px;
+    }
+    &__features {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .product {
+    padding: 60px 0;
+    &__content {
+      max-width: 380px;
+      padding-top: 24px;
+    }
+    &__title {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    &__features {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    &__description {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+    &__button-wrapper {
+      gap: 25px;
+    }
+    &__button {
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .product {
+    padding: 50px 0;
+    &__content {
+      max-width: 330px;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__features {
+      font-size: 14px;
+    }
+    &__description {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    &__button-wrapper {
+      gap: 20px;
+    }
+    &__button {
+      padding: 8px 20px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .product {
+    padding: 20px 0;
+    &__title {
+      font-size: 30px;
+    }
+    &__features {
+      margin-bottom: 20px;
+    }
+    &__description {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .product {
+    &:nth-child(even) .product__container,
+    .product__container {
+      flex-direction: column-reverse;
+    }
+    &__content {
+      padding: 0;
+      width: 100%;
+      max-width: none;
+    }
+    &__title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    &__features {
+      font-size: 12px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+    &__button {
+      padding: 5px 14px;
+      font-size: 12px;
+    }
+    &__picture {
+      width: 100%;
+    }
+  }
+}
