@@ -1,0 +1,34 @@
+mixin footer
+  footer.footer
+    .footer__container.container
+      +svg('#logo','Логотип компании Christmas Trees').footer__logo.logo.logo__second
+      adress.footer__contacts
+        +link('tel:+79479309294', '8 (947) 930 92 94').footer__item.footer__link
+        +link('mailto:christmas_trees@gmail.com', 'christmas_trees@gmail.com').footer__item.footer__link
+      ul.footer__list-social
+        li.footer__item-social
+          a.footer__link.footer__link_social(href='#', target='blank')
+            +svg('#whatsapp','Whats App').footer__link_social
+        li.footer__item-social
+          a.footer__link.footer__link_social(href='#', target='blank')
+            +svg('#instagram','Instagram').footer__link_social
+        li.footer__item-social
+          a.footer__link.footer__link_social(href='#', target='blank')
+            +svg('#youtube','YouTube').footer__link_social
+        li.footer__item-social
+          a.footer__link.footer__link_social(href='#', target='blank')
+            +svg('#telegram','Telegram').footer__link_social
+      ul.footer__info-list
+        li.footer__item ИП Иванов Макар Макарович
+        li.footer__item ИНН: 8499348834883838
+        li.footer__item ОГРНИП: 434343590998749
+      ul.footer__rules-list
+        li.footer__item
+          +link('#','Политика конфиденциальности').footer__link
+        li.footer__item
+          +link('#','Договор-оферта').footer__link
+      .footer__team
+        p.footer__item Дизайн:
+          +link('https://t.me/Mrshmalloww','tg @Mrshmalloww').footer__link
+        p.footer__item 2021 год
+        p.footer__item Christmas Trees

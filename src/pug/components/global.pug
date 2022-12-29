@@ -12,6 +12,6 @@ mixin link-img(href, name, url, alt, className)
 mixin button(name, type)
   button.button(class!=attributes.class type=type)= name
 
-mixin svg(className, href, aria_label)
-  svg(class=className, aria-label=aria_label)
+mixin svg(href, aria_label)
+  svg(class!=attributes.class aria-label=aria_label)
     use(href=href)

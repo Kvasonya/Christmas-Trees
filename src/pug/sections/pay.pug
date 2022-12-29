@@ -1,0 +1,23 @@
+mixin pay
+  section.pay
+    .pay__container.container
+      h2.pay__title Как можно оплатить
+      ul.pay__list
+        li.pay__item
+          article.pay__option_pay.option-pay
+            .option-pay__picture-wrapper
+              +img('../../assets/images/payment.svg', 'Платёжные системы').pay__picture.option-pay__picture
+            h3.option-pay__title Банковской картой
+            p.option-pay__description Visa/Mastercard или PayPal из любой страны
+        li.pay__item
+          article.pay__option_pay.option-pay
+            .option-pay__picture-wrapper
+              +svg('#logo','Логотип компании Christmas Trees').pay__picture.option-pay__picture.logo
+            h3.option-pay__title Беспроцентная рассрочка от нас
+            p.option-pay__description Мы делим платеж на 2 части. Первую часть вы оплачиваете сразу, вторую через 15 дней после получения дерева
+        li.pay__item
+          article.pay__option_pay.option-pay
+            .option-pay__picture-wrapper
+              +img('../../assets/images/partners_tinkoff.svg', 'Логотип банка Тинькофф').pay__picture.option-pay__picture
+            h3.option-pay__title Беспроцентная рассрочка от&nbsp;Тинькофф
+            p.option-pay__description Рассрочка на 3 месяца без первоначального платежа
