@@ -1,0 +1,29 @@
+mixin overlay()
+  .overlay.overlay_order
+    .modal
+      button.modal__close
+        +svg('#close','Кнопка Закрыть').modal__close_icon
+      h2.modal__title Оформить заказ
+      form(action='https://jsonplaceholder.typicode.com/posts' method='post').modal__form
+        label.modal__label
+          span.modal__label-text ФИО
+          input(type='text' name='bio' placeholder='Введите ваше ФИО' required).modal__input
+        label.modal__label.modal__label_end
+          span.modal__label-text Телефон
+          input(type='tel' name='phone' placeholder='Введите ваш номер телефона' required).modal__input
+        input(type='hidden' name='order').modal__order
+        +button('Заказать звонок','button').modal__button
+  .overlay.overlay_consultation
+    .modal
+      button.modal__close
+        +svg('#close','Кнопка Закрыть').modal__close_icon
+      h2.modal__title Есть вопросы? Мы с радостью ответим!
+      form(action='https://jsonplaceholder.typicode.com/posts' method='post').modal__form
+        label.modal__label
+          span.modal__label-text Ваш вопрос
+          input(type='text' name='question' placeholder='Введите ваш вопрос' required).modal__input
+        label.modal__label.modal__label_end
+          span.modal__label-text Телефон
+          input(type='tel' name='phone' placeholder='Введите ваш номер телефона' required).modal__input
+        input(type='hidden' name='consultation').modal__consultation
+        +button('Заказать звонок','button').modal__button

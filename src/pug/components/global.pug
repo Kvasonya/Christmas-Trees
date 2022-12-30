@@ -9,8 +9,8 @@ mixin link-img(href, name, url, alt, className)
     img(class=className, src=require(url), alt=alt)
     span=name
 
-mixin button(name, type)
-  button.button(class!=attributes.class type=type)= name
+mixin button(name, type, dataOrder)
+  button.button(class!=attributes.class type=type data-order=dataOrder)= name
 
 mixin svg(href, aria_label)
   svg(class!=attributes.class aria-label=aria_label)

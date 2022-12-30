@@ -3,7 +3,9 @@
 @import './global';
 @import './logo';
 
-@import './pages/index';
+//modal window
+@import './overlay';
+@import './modal';
 
 //header
 @import './sections/header/header';
