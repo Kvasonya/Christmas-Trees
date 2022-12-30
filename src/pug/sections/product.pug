@@ -1,3 +1,6 @@
+mixin buttonOrder(dataOrder)
+  button.button.product__button.product__button_order(class!=attributes.class, type='button', data-order=dataOrder)='Заказать'
+
 mixin product
   section#one.product
     .product__container.container
@@ -6,7 +9,7 @@ mixin product
         p.product__features Пихта Фразера чаще использовалась в качестве рождественской ёлки Белого дома
         p.product__description Мягкий аромат, форма, и способность сохранять мягкие иголки в течение длительного времени, делают её одним из лучших деревьев для рождества
         .product__button-wrapper
-          +button('Заказать','button').product__button.product__button_order
+          +buttonOrder('Пихта Фразера')
           +link('#','Подробнее').product__button.product__button_more
       +img('../../assets/images/tree_Fraser-fir.jpg', 'Пихта Фразера').product__picture
   section#two.product
@@ -16,7 +19,7 @@ mixin product
         p.product__features Русская ель — наиболее традиционная разновидность рождественских деревьев, которую можно встретить в большинстве советских фильмов про новый год
         p.product__description Отличительной особенностью русской ёлки являются выраженный хвойный запах, короткие колючие иголки и сравнительно менее пышная крона
         .product__button-wrapper
-          +button('Заказать','button').product__button.product__button_order
+          +buttonOrder('Русская ель')
           +link('#','Подробнее').product__button.product__button_more
       +img('../../assets/images/tree_Russian-spruce.jpg', 'Русская ель').product__picture
   section#three.product
@@ -26,6 +29,6 @@ mixin product
         p.product__features Пихта сибирская является одной из самых красивых и ароматных хвойных пород и ее часто можно встретить в парках и садах
         p.product__description Хвоя Сибирской пихты в отличии от еловой крупнее, зеленее, совершенно не колючая и мягкая как трава
         .product__button-wrapper
-          +button('Заказать','button').product__button.product__button_order
+          +buttonOrder('Сибирская пихта')
           +link('#','Подробнее').product__button.product__button_more
       +img('../../assets/images/tree_Siberian-fir.jpg', 'Сибирская пихта').product__picture
